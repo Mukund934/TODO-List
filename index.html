@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Todo List Application</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="input-field">
+            <label for="todo-input" class="sr-only">Enter your new todo</label>
+            <textarea id="todo-input" placeholder="Enter your new todo" aria-label="New Todo"></textarea>
+            <i class="uil uil-notes note-icon"></i>
+        </div>
+
+        <ul class="todoLists" aria-live="polite" aria-label="Todo List"></ul>
+
+        <div class="pending-tasks">
+            <span>You have <span class="pending-num"> no </span> tasks pending.</span>
+            <button class="clear-button" aria-label="Clear all tasks">Clear All</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
